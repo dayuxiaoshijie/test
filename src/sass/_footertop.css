@@ -1,0 +1,146 @@
+footer {
+  background: #f0f0f0;
+}
+
+#footer_top {
+  color: #999;
+  width: 100%;
+}
+
+#footer_top .warp {
+  border-bottom: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+#footer_top li {
+  width: 25%;
+  float: left;
+  padding: 43px 0;
+  line-height: 30px;
+  cursor: pointer;
+  text-align: left;
+}
+
+#footer_top li em {
+  font-style: normal;
+  vertical-align: top;
+}
+
+#footer-middle {
+  padding: 40px 0 41px;
+  height: 245px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#footer-middle dl {
+  float: left;
+  margin-right: 90px;
+}
+
+#footer-middle dl:last-child {
+  margin-right: 0;
+  width: 172px;
+  height: 96px;
+}
+
+#footer-middle dl:last-child p:first-child {
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 2px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: red;
+}
+
+#footer-middle dl:last-child p:nth-child(2) {
+  font-size: 12px;
+  color: #999;
+  line-height: 18px;
+  text-align: center;
+}
+
+#footer-middle dl:last-child a {
+  width: 160px;
+  height: 36px;
+  color: red;
+  font-size: 12px;
+  padding: 2px;
+  margin-top: 20px;
+  border: 1px solid red;
+  display: inline-block;
+  line-height: 32px;
+  text-indent: 10px;
+}
+
+#footer-middle dl dt {
+  line-height: 14px;
+  padding-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+#footer-middle dl dd {
+  line-height: 12px;
+}
+
+#footer-middle dl dd a {
+  color: #999;
+  display: inline-block;
+  padding-bottom: 12px;
+  font-size: 12px;
+}
+
+#footer-bottom {
+  width: 100%;
+  padding: 25px 0;
+  font-size: 12px;
+  line-height: 22px;
+  color: #999;
+  background-color: #e3e3e3;
+}
+
+#footer-bottom .warp {
+  overflow: hidden;
+}
+
+#footer-bottom .warp a {
+  font-size: 12px;
+}
+
+#footer-bottom .blod a {
+  color: #666;
+  padding: 0 15px;
+}
+
+#footer-bottom p a {
+  color: #999;
+}
+
+#footer-bottom p:nth-child(2) .marginL {
+  margin-left: 10px;
+}
+
+#footer-bottom .foot-r {
+  line-height: 29px;
+}
+
+#footer-bottom .foot-r a {
+  color: #999;
+  padding: 0 12px;
+  display: inline-block;
+  bottom: 29px;
+}
+
+#footer-bottom .f_t {
+  text-align: center;
+}
+
+#footer-bottom .f_t div {
+  display: inline-block;
+}
+
+#footer-bottom .f_t div img {
+  height: 32px;
+  margin: 0 2px;
+}

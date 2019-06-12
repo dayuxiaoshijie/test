@@ -1,0 +1,162 @@
+@charset "utf-8";
+//底部
+@import "footerbottom";
+
+$loginwidth:100%;
+$loginheight:40px;
+$lineheight: 40px;
+$textindent: 50px;
+$fontsize: 12px;
+#all_header{
+    padding:20px 0;
+    .headertitile{
+        overflow: hidden;
+        margin-left: 20px;
+        span{
+            font-size: 32px;
+            color: #666;
+            line-height: 45px;
+            margin-left: 30px;
+            font-weight: lighter;
+        }
+    }
+    
+}
+//一样的格式，背景图
+#box{
+    width:100%;
+    background: url("http://user.tcl.com/img/back.jpg") no-repeat center 0;
+    height:480px;
+    position: relative;
+    margin-bottom: 80px;
+}
+.login_cont{
+    position: absolute;
+    right:200px;
+    top: 40px;
+    width: 280px;
+    height: 378px;
+    border: 1px solid #ccc;
+    background: #fff; 
+    padding: 20px 40px 20px;
+    h3{
+        line-height: 32px;
+        font-size: 20px;
+        color: #333;
+    }
+    .login_cont_top{
+        margin: 3px 0 15px 0;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #979797;
+        overflow: hidden;
+        .ico{
+            margin-left: 10px;
+            width: 32px;
+            height: 32px;
+            background: url("../img/t-party-icon.png");
+            float: left;
+            &:nth-child(1){
+                background-position: 0 -84px;
+            }
+            &:nth-child(2){
+                background-position: 0 -42px;
+            }   
+        }
+    }
+    .login_cont_middle{
+        div{
+            margin-top: 5px;
+            margin-bottom:  15px;
+            position: relative;
+            i{
+                position: absolute;
+                width: 28px;
+                height: 27px;
+                margin: 8px 0 0 8px;
+                background: url("../img/l-icon.png");
+            }
+            input{
+                border: 1px solid #999;
+                padding: 0;
+                width: $loginwidth;
+                height: $loginheight;
+                line-height: $lineheight;
+                text-indent: $textindent;
+                font-size: $fontsize;
+                box-sizing: border-box;
+            }
+        }
+        .user{
+            background-position: -32px -1px;
+        }
+        .pass{
+            background-position: -96px 0;
+        }
+        .loginbtn{
+            background: red;
+            height: $loginheight;
+            line-height: $lineheight;
+            a{
+                display:block;
+                text-align: center;
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+        
+    }
+    .o-methds{
+        a{
+            font-size: 12px;
+            color: #333;
+            line-height: 20px;
+            margin-right: 35px;
+            display: inline-block;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+   
+}
+
+//注册信息
+.register_cont{
+    @extend .login_cont;
+   input,h3{
+    margin-bottom:  15px;
+   }
+   #imgyzm,#roundnumimg{
+       display: inline-block;
+   }
+   #imgyzm{
+       width: 180px;
+   }
+   #roundnumimg{
+       width: 95px;
+   }
+    .register_cont_middle{
+        @extend .login_cont_middle;
+        #cheackbtn{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+        }
+        #registerbtn{
+            @extend .loginbtn;
+            width: $loginwidth;
+                height: $loginheight;
+                line-height: $lineheight;
+        }
+    }
+    .o-methds{
+        a{
+            font-size: 14px!important;
+            &:last-child{
+                color: red;
+            }
+        }
+        
+    }
+}

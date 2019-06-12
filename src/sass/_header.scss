@@ -1,0 +1,252 @@
+
+
+
+$font1color: #ccc;
+$font2color:#fff;
+$font3color:#555;
+$font4color:#333;
+$margintop:20px;
+
+
+//头部最上面的广告
+$header_topheight:85px;
+$spanwidht:20px;
+header{
+    color:$font1color;
+    height:205px;
+}
+#heaer_guangao{
+    height: $header_topheight;
+    background: $font2color;
+        .heaerimg{
+            display: block;
+            background: url("http://s0.mall.tcl.com/group1/M00/05/A2/Ckgbllz3rvCAf5nLAAFmU5AQTdY232.jpg") no-repeat center;
+            height: $header_topheight;
+            position: relative;
+        }
+        .headerclose{
+            position: absolute;
+            top: 5px;
+            right:10px;
+            width: $spanwidht;
+            height:$spanwidht;
+            line-height: $spanwidht;
+            color: $font2color;
+            font-size: 10px;
+            cursor: pointer;
+            background: $font4color;
+            text-align: center;
+        }
+}
+//上面的导航,主要样式
+$header_topnavheight:40px;
+#heaer_topbar{
+    height: $header_topnavheight;
+    background-color: #666; 
+    .warp{
+        line-height: $header_topnavheight;
+    }
+    // lihover的时候变红
+    li{
+        float: left;
+        &:hover a{
+            color:$font2color;
+        }
+    }
+    i{
+        float: left;
+        margin:0 15px;
+    }
+    //z左边的导航
+    #top_bar_nav{
+        li{
+            margin-left:43px;
+            &:first-child{
+                margin-left:0;
+            }
+        }
+    }
+    //右边的导航和二级导航
+    #nav-right{
+        .wechat_box{
+            position: relative;
+            &:hover .wechat{
+                display: block;
+            }
+            .wechat{
+                width: 180px;
+                height: 200px;
+                background-color:$font2color;
+                border: 1px solid $font1color;
+                text-align: center;
+                z-index:10;
+                left: -30px;
+                position: absolute;
+                top: 40px;
+                display: none;
+                img{
+                    display: inline-block;
+                    width: 140px;
+                    height: 140px;
+                    margin-top: 10px;
+                }
+                p{
+                    margin-top: -20px;
+                    font-size: 10px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+//页面主导行
+$header_navheight:80px;
+$juli:40px;
+$centerbox:1240px;
+$h1widht:75px;
+$marginleft:30px;
+$erjifont:12px;
+$erjiimgw:160px;
+$erjiimgh:100px;
+#heaer_nav{
+    height:$header_navheight;
+    line-height:$header_navheight;
+    position: relative;
+    margin: 0 auto;
+    .warp{
+        width: $centerbox+40;
+        h1{
+            width: $h1widht;
+            height:$juli;
+            .logo{
+                font-family: iconfont-tcl;
+                font-size:$h1widht;
+                font-weight: 100;
+                margin-top: -3px;
+            }
+        }
+        .h_nav_l{
+            margin-top: $margintop;
+            margin-left: $header_navheight;
+            margin-right:$marginleft;
+            li{
+                float: left;
+                line-height: $juli;
+                padding: 0px 16px 0px 17px;
+                a{
+                    color: $font4color;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .h_nav_r{
+            margin-top: $margintop;
+            i{
+                border-left: 1px solid #e3e3e3;
+                width: 1px;
+                height: 18px;
+                margin: 10px 0 0 0;
+            }
+            li{
+                float: left;
+                line-height: $juli;
+                padding: 0px 10px;
+                a{
+                    color: $font4color;
+                }
+                &:last-child{
+                    position: relative;
+                    input{
+                        width: 230px;
+                        height:30px;
+                        text-indent: 10px;
+                    }
+                    span{
+                        background-color: #e4e4e4;
+                        width: 28px;
+                        height: 28px;
+                        display: block;
+                        text-align: center;
+                        line-height: 28px;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 20px;
+                        top: 7px;
+                        cursor: pointer;
+                    }
+                    .serchbox{
+                        position: absolute;
+                        top: 38px;
+                        z-index: 999;
+                        width: 233px;
+                        max-height:150px;
+                        border: 1px solid #ccc;
+                        background:$font2color;
+                        overflow: hidden;
+                        display:none;
+                        li{
+                            width:233px;
+                            line-height: 30px;
+                            text-indent: 10px;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+    
+}
+
+.mainerjinav{
+    background: $font2color;
+    position: absolute;
+    top: 80px;
+    height: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center; 
+    display: none;
+}
+
+//主导航的二级导航
+ .menuBarLi{
+    .m1{
+        opacity: 0;
+    }
+    li{
+        float: left;
+        width: 162px;
+        margin: 0 30px;
+        img {
+            width: $erjiimgw;
+            height: 100px;
+        }
+        .m_img {
+            display: block;
+            width: 1$erjiimgw;
+            height: $erjiimgh;
+            line-height: $erjiimgh;
+            margin: 0 auto;
+        }
+        .m_tit {
+            height: $erjifont;
+            font-size: $erjifont;
+            margin-top: 8px;
+            line-height:$erjifont;
+            text-align: center;
+            color: #333;
+            overflow: hidden;
+        }
+        .red{
+            font-size: $erjifont;
+            line-height: 24px
+        }
+    }
+}
+
